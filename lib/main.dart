@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_6/pages/LoginPage.dart';
 import 'package:task_6/pages/contacts_page.dart';
 import 'package:task_6/pages/home_page.dart';
 
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
       routes: {
         HomePage.id: (context)=>HomePage(),
-        ContactsPage.id: (context)=>const ContactsPage(),
+        ContactsPage.id: (context)=>ContactsPage(),
+        LoginPage.id: (context)=> LoginPage(),
       },
     );
   }

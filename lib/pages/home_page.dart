@@ -10,6 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+
   /// Check contacts permission
   @override
   void initState() {
@@ -77,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               accountName: Text("Javlon Nurullayev"),
               accountEmail: Text("nurullayevjavlonbek@gmail.com"),
             ),
-            const ListTile(
+            ListTile(
               leading: Icon(Icons.person_add),
               title: Text("Создать группу"),
               selected: true,
@@ -91,20 +93,21 @@ class _HomePageState extends State<HomePage> {
               leading: const Icon(Icons.contacts),
               title: const Text("Контакты"),
             ),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.call_outlined), title: Text("Звонки")),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.accessibility), title: Text("Люди рядом")),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.bookmark_border), title: Text("Избранное")),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.settings), title: Text("Настройки")),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.person_add_alt_1_outlined),
                 title: Text("Пригласить друзей")),
-            const ListTile(
+            ListTile(
                 leading: Icon(Icons.announcement_outlined),
                 title: Text("Возможности Telegram")),
+
           ],
         ),
       ),
